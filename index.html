@@ -336,8 +336,11 @@
             y: Math.floor(Math.random() * 19 + 1) * box
         };
 
-        // Prevent window scrolling when playing
+        // Prevent window scrolling when playing, UNLESS typing in a search box
         window.addEventListener("keydown", function(e) {
+            // Let the spacebar work if clicking inside a text box!
+            if (e.target.tagName === "INPUT") return; 
+            
             if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
                 e.preventDefault();
             }
