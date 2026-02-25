@@ -26,14 +26,38 @@
         }
 
         h1 { 
+            h1 { 
             text-align: center; 
             font-weight: 800;
+            font-size: 3.5rem; /* Makes Sandia Seals massive */
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
             background: linear-gradient(45deg, var(--turquoise), var(--hot-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 0px; /* Pulls the tagline up close */
+            margin-top: 20px;
+        }
+
+        .subheader {
+            text-align: center;
+            font-weight: 600;
+            font-style: italic;
+            color: #aaa;
+            letter-spacing: 1.5px;
+            margin-top: 5px;
             margin-bottom: 40px;
+        }
+
+        .directory-title {
+            text-align: center;
+            font-weight: 800;
+            font-size: 1.5rem; /* Smaller than the main header */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            margin-bottom: 25px;
+        }
         }
 
         .search-container { 
@@ -195,7 +219,10 @@
 </head>
 <body>
 
-    <h1>Turquoise Care Directory</h1>
+    <h1>Sandia Seals</h1>
+    <p class="subheader">let's tighten it up.</p>
+    
+    <div class="directory-title">Turquoise Care Directory</div>
     
     <div class="search-container">
         <div class="form-group">
