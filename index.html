@@ -155,6 +155,42 @@
         .event-date { color: var(--turquoise); font-weight: bold; font-size: 0.9rem; margin-bottom: 5px; }
         .event-title { font-weight: 600; color: white; margin-bottom: 3px; }
         .event-location { font-size: 0.85rem; color: #888; }
+    .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+            color: #aaa;
+            letter-spacing: 0.5px;
+        }
+        .footer a {
+            color: var(--turquoise);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: var(--hot-pink);
+        }
+        .donate-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background: rgba(255, 0, 127, 0.1);
+            border: 1px solid var(--hot-pink);
+            color: var(--hot-pink) !important;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .donate-btn:hover {
+            background: var(--hot-pink);
+            color: white !important;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -210,8 +246,12 @@
             <p style="text-align: center; font-size: 0.8rem; color: #888; margin-top: 10px;">Click the black box and use Arrow Keys to play.</p>
         </div>
     </div>
-
-    <script>
+<div class="footer">
+        <p>With all my love, <a href="mailto:sherri@sandiaseals.com">sherri@sandiaseals.com</a></p>
+        <a href="https://cash.app/$seizemeans" target="_blank" rel="noopener noreferrer" class="donate-btn">
+            Support the Site / Cash App
+        </a>
+    </div>    <script>
         // --- PROVIDER SEARCH LOGIC ---
         async function executeSearch() {
             const city = document.getElementById('city').value;
